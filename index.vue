@@ -48,7 +48,9 @@
             <h2>{{title}}</h2>
             <img src="./close.png" @click="$emit('clickClose')">
         </div>
-        <slot name="default"></slot>
+        <div class="vue-window-modal-body">
+            <slot name="default"></slot>
+        </div>
     </div>
 </template>
 
